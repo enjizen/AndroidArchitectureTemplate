@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/brandImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/brandNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:textSize="60sp"
+            android:layout_toEndOf="@id/brandImageView"
+            android:gravity="center_horizontal|center_vertical"
+            tools:text="TOYOTA"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
